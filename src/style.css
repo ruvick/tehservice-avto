@@ -14,7 +14,7 @@ h2 {
 h3 {
   font-family: 'ProximaNova-Bold',sans-serif; 
   font-size: 1.5em;
-  line-height: 1.25; }
+  line-height: 1.25; } 
 
 @font-face {
   font-family: 'ProximaNova-Bold';
@@ -1044,6 +1044,15 @@ section.contacts {
     color: inherit; }
   #footer .nav-panel .logo {
     margin-right: 0.7%; }
+
+.service-sl__item {
+   height: 535px !important;
+}
+
+.content-box span {
+  font-size: 43px;
+  letter-spacing: 3px;
+}
 
 .service-sl-section {
   margin-bottom: -6px; }
