@@ -1,7 +1,7 @@
 {
-  "name": "anticor",
+  "name": "punctto1",
   "version": "1.0.1",
-  "description": "Лендинг по антикор (Автопрофи)",
+  "description": "Лендинг пункт ТО (Автопрофи)",
   "main": "index.html",
   "scripts": {
     "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files *.css,*.html,css/**/*,js/**/*",

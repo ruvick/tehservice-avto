@@ -586,6 +586,7 @@ section h2 {
       color: #f6630a; }
   .nav-panel nav {
     margin-right: auto;
+    margin-left: auto;
     max-width: 525px;
     width: 50%;
     min-width: 473px; }
