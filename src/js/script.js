@@ -69,7 +69,7 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        dots: true,
+        dots: false,
 //        fade: true,
         appendDots: $('.service-sl__dots'),
         prevArrow: '.service-sl__arr__prev',
