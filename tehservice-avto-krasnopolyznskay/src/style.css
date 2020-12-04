@@ -571,14 +571,16 @@ section h2 {
   align-items: center; }
   .nav-panel .logo {
     display: block;
-    width: 165px;
+    width: 115px;
     height: 70px;
     background-color: #3a745f;
     border-bottom-right-radius: 21px;
-    background-image: url(img/car-service-2.svg);
+    background-image: url(img/car-service-1.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-size: 53%;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
     margin-right: 2.7%; }
   .nav-panel a {
     transition: all 200ms ease; }
@@ -1622,6 +1624,11 @@ section.contacts {
   .service-sl-section .service-sl .service-sl__item .content-box h1 {
     margin-top: 0;
     font-size: 3em; } }
+@media screen and (max-width: 812px) {
+  .nav-panel .logo {
+    border-left: none;
+    border-right: none;
+ } }
 @media screen and (max-width: 750px) {
   .service-sl-section .service-sl__item .spacer {
     min-height: 390px; } }
