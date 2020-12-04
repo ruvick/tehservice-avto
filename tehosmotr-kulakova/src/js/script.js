@@ -23,7 +23,7 @@ document.createElement('main');
 
 $(function () {
 
-    jQuery("input[type=tel]").inputmask("+7(999)999-99-99");
+    jQuery("input[type=tel]").inputmask("+7(999)999-99-99");  
 
     let $burgerBtn = $('.burger-btn');
     let $headerMenu = $('.main-menu');
@@ -192,11 +192,11 @@ $(function () {
         }
         
         var  jqXHR = jQuery.post(
-            "https://antikor46.ru/sender/send.php",
+            "http://tehosmotr-kulakova.ru/sender/send.php",
             {
                 phone: jQuery('.request__form input[name=tel]').val(),		
                 name: jQuery('.request__form input[name=name]').val(),
-                mail: jQuery('.request__form input[name=email]').val(),
+                model: jQuery('.request__form input[name=model]').val(),
             }
             
         );
@@ -204,10 +204,10 @@ $(function () {
         
         jqXHR.done(function (responce) {
             console.log(responce);
-            document.location.href = "https://antikor46.ru/thencs.html";
+            document.location.href = "http://tehosmotr-kulakova.ru/thencs.html";
             jQuery('.request__form input[name=tel]').val("");	
             jQuery('.request__form input[name=name]').val("");
-            jQuery('.request__form input[name=email]').val("");
+            jQuery('.request__form input[name=model]').val("");
         });
         
         jqXHR.fail(function (responce) {

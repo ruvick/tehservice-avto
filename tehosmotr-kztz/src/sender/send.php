@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 
 if((isset($_POST['phone'])&&$_POST['phone']!="")){
         $to = 'asmi046@gmail.com,office@aprofi46.ru'; 
-        $subject = 'Обращение с сайта antikor46.ru';
+        $subject = 'Обращение с сайта tehosmotr-kztz.ru';
         $message = '
                 <html>
                     <head>
@@ -12,11 +12,11 @@ if((isset($_POST['phone'])&&$_POST['phone']!="")){
                     <body>
                         <p>Имя: '.$_POST['name'].'</p>
                         <p>Телефон: '.$_POST['phone'].'</p> 
-                        <p>e-mail: '.$_POST['mail'].'</p>                   
+                        <p>Марка и модель авто: '.$_POST['model'].'</p>                   
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
-        $headers .= "From: Заявка с сайта Антикор <noreply@antikor46.ru>\r\n";
+        $headers .= "From: Заявка с сайта ТЕХСЕРВИЗАВТО <noreply@antikor46.ru>\r\n";
         if (mail($to, $subject, $message, $headers)) {
             http_response_code(200);
             die();
@@ -26,4 +26,4 @@ if((isset($_POST['phone'])&&$_POST['phone']!="")){
         }
 
 }
-?>
+?> 

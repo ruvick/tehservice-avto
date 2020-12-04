@@ -27,7 +27,7 @@ $(function () {
 
     let $burgerBtn = $('.burger-btn');
     let $headerMenu = $('.main-menu');
-    let closeMenuBtn = $('.close-main-menu');
+    let closeMenuBtn = $('.close-main-menu'); 
 
     $burgerBtn.bind('click', function (e) {
         e.preventDefault();
@@ -192,11 +192,11 @@ $(function () {
         }
         
         var  jqXHR = jQuery.post(
-            "https://antikor46.ru/sender/send.php",
+            "https://tehosmotr-patriotov.ru/sender/send.php",
             {
                 phone: jQuery('.request__form input[name=tel]').val(),		
                 name: jQuery('.request__form input[name=name]').val(),
-                mail: jQuery('.request__form input[name=email]').val(),
+                model: jQuery('.request__form input[name=model]').val(),
             }
             
         );
@@ -204,10 +204,10 @@ $(function () {
         
         jqXHR.done(function (responce) {
             console.log(responce);
-            document.location.href = "https://antikor46.ru/thencs.html";
+            document.location.href = "https://tehosmotr-patriotov.ru/thencs.html";
             jQuery('.request__form input[name=tel]').val("");	
             jQuery('.request__form input[name=name]').val("");
-            jQuery('.request__form input[name=email]').val("");
+            jQuery('.request__form input[name=model]').val("");
         });
         
         jqXHR.fail(function (responce) {
